@@ -4,9 +4,9 @@ public class Main {
 
     public static int arraySum(int[] myArray) {
         int sum = 0;
-        for (int num :myArray
-             ) {
-            sum+=num;
+        for (int num : myArray
+        ) {
+            sum += num;
         }
         return sum;
     }
@@ -28,8 +28,8 @@ public class Main {
 
     public static int[] toPower(int size, int power) {
         int[] powerArray = new int[size];
-        for(int i=0;i<powerArray.length;i++){
-            powerArray[i]=(int)Math.pow(i, power);
+        for (int i = 0; i < powerArray.length; i++) {
+            powerArray[i] = (int) Math.pow(i, power);
         }
         return powerArray;
     }
