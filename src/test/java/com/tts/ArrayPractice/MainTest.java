@@ -12,10 +12,12 @@ class MainTest {
     private final int[] demoArray3 = new int[]{1, 2, 3};
     private final int[] demoArray4 = new int[]{1, 2, 3, 4};
     private final int[] demoArray5 = new int[]{1, 2, 3, 4, 5};
+    private final int[] demoArrayTTS = new int[]{1, 5, 6, 5, 4, 1};
     private final int[] powerArray0 = new int[]{0, 0};
     private final int[] powerArray1 = new int[]{1, 2};
     private final int[] powerArray2 = new int[]{3, 4};
     private final int[] powerArray3 = new int[]{5, 6};
+    // TODO: Extract test data to external file
 
     @org.junit.jupiter.api.Test
     void main() {
@@ -63,6 +65,11 @@ class MainTest {
     void arrayMax() {
         int expected = 5;
         assertEquals(expected, Main.arrayMax(demoArray5));
+    }
+    @Test
+    void arrayMaxTTS() {
+        int expected = 6;
+        assertEquals(expected, Main.arrayMax(demoArrayTTS));
     }
 
     @Test
