@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
 
+    private final int[] demoArray0 = new int[]{};
     private final int[] demoArray1 = new int[]{1};
     private final int[] demoArray2 = new int[]{1, 2};
     private final int[] demoArray3 = new int[]{1, 2, 3};
@@ -64,6 +65,11 @@ class MainTest {
         assertEquals(expected, Main.arraySum(demoArray5));
     }
 
+    @Test
+    void arrayMax0() {
+        int expected = 0;
+        assertEquals(expected, Main.arrayMax(demoArray0));
+    }
     @Test
     void arrayMax() {
         int expected = 5;
