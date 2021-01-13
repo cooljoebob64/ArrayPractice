@@ -87,5 +87,10 @@ class MainTest {
         int[] expected = {0, 1, 16};
         assertArrayEquals(expected, Main.toPower(powerArray2[0],powerArray2[1]));
     }
+    @Test
+    void toPower3() {
+        int[] expected = {0, 1, 64, 729, 4096};
+        assertArrayEquals(expected, Main.toPower(powerArray3[0],powerArray3[1]));
+    }
 
 }

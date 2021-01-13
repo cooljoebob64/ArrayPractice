@@ -27,9 +27,10 @@ public class Main {
     }
 
     public static int[] toPower(int size, int power) {
-
-        return new int[]{};
+        int[] powerArray = new int[size];
+        for(int i=0;i<powerArray.length;i++){
+            powerArray[i]=(int)Math.pow(i, power);
+        }
+        return powerArray;
     }
-
-
 }
